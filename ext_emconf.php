@@ -1,4 +1,5 @@
 <?php
+
 $EM_CONF[$_EXTKEY] = [
     'title' => 'Site Language Redirection',
     'description' => 'PSR-15 middleware to redirect user to correct site language via HTTP headers (Accept-Language) and IP address.',

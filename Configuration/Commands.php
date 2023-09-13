@@ -4,6 +4,6 @@ use UrbanTrout\SiteLanguageRedirection\Command\UpdateDB;
 
 return [
     'sitelanguageredirection:updatedb' => [
-        'class' => UpdateDB::class
+        'class' => UpdateDB::class,
     ],
 ];

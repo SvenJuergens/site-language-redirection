@@ -1,5 +1,6 @@
 <?php
-declare(strict_types = 1);
+
+declare(strict_types=1);
 namespace UrbanTrout\SiteLanguageRedirection\Middleware;
 
 use GeoIp2\Database\Reader;
@@ -192,7 +193,6 @@ class RedirectionMiddleware implements MiddlewareInterface
         );
 
         /** @var RedirectResponse $response */
-
         $response = new RedirectResponse($uri, 307);
         return $response->withAddedHeader('Set-Cookie', $cookieName . '=' . $matchingSiteLanguage->getLanguageId() . '; Path=/; Max-Age=' . (60*60*24*30));
     }
@@ -237,7 +237,6 @@ class RedirectionMiddleware implements MiddlewareInterface
             $matchingSiteLanguages = array_filter(
                 $siteLanguages,
                 function ($siteLanguage) use ($geocodedIsoCode) {
-
                     /**
                      * Only use last 2 characters of hreflang (de-at, en, en-uk).
                      *

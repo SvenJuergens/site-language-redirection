@@ -1,4 +1,5 @@
 <?php
+
 namespace UrbanTrout\SiteLanguageRedirection\Command;
 
 use Psr\Log\LoggerAwareInterface;
